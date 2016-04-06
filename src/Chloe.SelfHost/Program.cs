@@ -9,7 +9,7 @@ namespace Chloe.SelfHost
         {
             string baseAddress = "http://localhost:9006/";
 
-            WebApp.Start<Chloe.Api.Startup>(url: baseAddress);
+            WebApp.Start<Chloe.SelfHost.Startup>(url: baseAddress);
 
             Console.ReadLine();
         }
