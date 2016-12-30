@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using Swashbuckle.Application;
+using System.Web.Http;
 
 namespace Chloe.Api
 {
@@ -8,13 +9,9 @@ namespace Chloe.Api
         {
             config.MapHttpAttributeRoutes();
 
-            config.Formatters.Remove(config.Formatters.XmlFormatter);
-
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
+            config
+                .EnableSwagger(c => c.SingleApiVersion("v1", "Chloe"))
+                .EnableSwaggerUi();
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System.Web.Http;
+﻿using System.Threading.Tasks;
+using System.Web.Http;
+using System.Web.Http.Description;
 
 namespace Chloe.Api.Controllers
 {
@@ -7,6 +9,7 @@ namespace Chloe.Api.Controllers
     {
         [HttpGet]
         [Route("get")]
+        [ResponseType(typeof(string))]
         public IHttpActionResult Get() => Ok("Hello World!");
     }
 }
