@@ -1,7 +1,7 @@
 ﻿using Swashbuckle.Application;
 using System.Web.Http;
 
-namespace Chloe.Api
+namespace Chloe.Core
 {
     public static class ApiConfiguration
     {

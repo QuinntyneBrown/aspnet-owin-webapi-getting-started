@@ -105,12 +105,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Chloe.Api\Chloe.Api.csproj">
+    <ProjectReference Include="..\Chloe.Core\Chloe.Core.csproj">
       <Project>{4a1a667b-b0a3-41a8-9491-aeb37b6d1846}</Project>
-      <Name>Chloe.Api</Name>
+      <Name>Chloe.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

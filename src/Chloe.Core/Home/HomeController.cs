@@ -1,8 +1,7 @@
-﻿using System.Threading.Tasks;
-using System.Web.Http;
+﻿using System.Web.Http;
 using System.Web.Http.Description;
 
-namespace Chloe.Api.Controllers
+namespace Chloe.Core.Controllers
 {
     [RoutePrefix("api/home")]
     public class HomeController : ApiController

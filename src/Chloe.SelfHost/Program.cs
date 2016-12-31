@@ -1,9 +1,8 @@
 ﻿using Owin;
-using System;
 using System.Web.Http;
 using static Microsoft.Owin.Hosting.WebApp;
 using static System.Console;
-using static Chloe.Api.ApiConfiguration;
+using static Chloe.Core.ApiConfiguration;
 
 namespace Chloe.SelfHost
 {
